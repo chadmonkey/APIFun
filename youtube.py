@@ -21,5 +21,6 @@ response = request.execute()
 # Print titles and views
 for video in response["items"]:
     title = video["snippet"]["title"]
-    views = video["statistics"].get("viewCount", "N/A")
-    print(f"{title} - {views} views")
+    #views = video["statistics"].get("viewCount", "N/A")
+    #print(f"{title} - {views} views")
+    print(f"{title}")
