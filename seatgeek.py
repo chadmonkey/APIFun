@@ -5,8 +5,8 @@ config = configparser.ConfigParser()
 config.read("config.properties")
 
 # SeatGeek API credentials
-api_key = config.get("API_KEYS", "SEATGEEK_CLIENT_ID")
-api_key = config.get("API_KEYS", "SEATGEEK_CLIENT_SECRET")
+CLIENT_ID = config.get("API_KEYS", "SEATGEEK_CLIENT_ID")
+CLIENT_SECRET = config.get("API_KEYS", "SEATGEEK_CLIENT_SECRET")
 
 # Replace this with your target event ID (you can find it via search endpoint)
 event_id = 1234567
